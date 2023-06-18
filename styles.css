@@ -5,26 +5,123 @@
     font-family: "Poppins", sans-serif;
 }
 
+button{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
 .container {
     display: grid;
+    margin-top: 10px;
     grid-template-columns: 1fr 5fr;
+    height: 100vh;
 }
 
 .sidebar {
+    display: grid;
     grid-column: 1;
+    justify-items: center;
+    height: 100vh;
+}
+
+.sidebar h3 {
+    display: inline;
 }
 
 article {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 20px
 }
 
 header {
+    display: grid;
     grid-column: 1 / -1;
+    grid-template-columns: 2.5fr 1fr;
+    margin-right: 10px;
+    align-items: center;
 }
 
-.dashboard {
+.left-header {
     display: grid;
-    grid-row: 1;
-    grid-column: 1 / -1;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
 }
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
+
+header .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.left-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.ticket-section {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.tickets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px
+}
+
+.right-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-right: 10px;
+}
+
+.announcements {
+    display: grid;
+    gap: 10px;
+}
+
+.announcements p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 4;
+    -webkit-box-orient: vertical;
+ }
+
+ .tickets p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3;
+    -webkit-box-orient: vertical;
+ }
+
+ .ticket {
+    display: grid;
+    gap: 5px;
+ }
+
+ .ticket footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+ }
+
+ .ticket h3 {
+    font-size: 1.2rem;
+ }
