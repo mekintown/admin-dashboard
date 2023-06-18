@@ -11,18 +11,6 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h2 class="dashboard">Dashboard</h2>
-            <nav>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-envelope"></i>
-                <i class="fa-solid fa-bell"></i>
-            </nav>
-            <div class="profile">
-                <h3>Admin</h3>
-                <i class="fa-solid fa-user"></i>
-            </div>
-        </header>
         <nav class="sidebar">
             <div>
                 <i class="fa-solid fa-house"></i>
@@ -53,87 +41,102 @@
                 <h3>Privacy</h3>
             </div>
         </nav>
-        <section class="introduction">
-            <h2 class="section-title">Hello Admin!</h2>
-            <p>Today you have 10 new tickets</p>
-            <button>View Analysis</button>
-        </section>
-
-        <section class="ticket">
-            <h2 class="section-title">Ticket</h2>
-            <div class="ticket">
-                <h2 class="ticket-header">Issue: Login page error</h2>
-                <h3 class="ticket-id">DEV-12345</h3>
-                <p class="ticket-description">Users are unable to log in to the system. After entering their credentials, an "Invalid username or password" message is displayed.</p>
-                <button>Read More</button>
-                <h3 class="ticket-status">Open</h3>
-            </div>
-            <div class="ticket">
-                <h2 class="ticket-header">Feature: User Profile Picture Upload</h2>
-                <h3 class="ticket-id">DEV-54321</h3>
-                <p class="ticket-description">Implement a feature that allows users to upload and update their profile pictures. The uploaded images should be saved securely and displayed on the user's profile page.</p>
-                <button>Read More</button>
-                <h3 class="ticket-status">In Progress</h3>
-            </div>
-            <div class="ticket">
-                <h2 class="ticket-header">Feature: Search Function Optimization</h2>
-                <h3 class="ticket-id">DEV-98765</h3>
-                <p class="ticket-description">Improve the search functionality to provide more accurate and faster search results. The current search algorithm is slow and sometimes returns irrelevant results.
-                    Proposed Solution</p>
-                <button>Read More</button>
-                <h3 class="ticket-status">Pending Review</h3>
-            </div>
-            <div class="ticket">
-                <h2 class="ticket-header">Issue: Outdated Third-Party Library</h2>
-                <h3 class="ticket-id">DEV-24680</h3>
-                <p class="ticket-description">The application is currently using an outdated version of the XYZ library (v1.2.3), which may have security vulnerabilities and lacks the latest features and optimizations.
-                    Action Required:</p>
-                <button>Read More</button>
-                <h3 class="ticket-status">Open</h3>
-            </div>
-            <div class="ticket">
-                <h2 class="ticket-header">Issue: Missing API Documentation</h2>
-                <h3 class="ticket-id">DEV-13579</h3>
-                <p class="ticket-description">The API endpoints for the new user registration feature lack proper documentation, making it challenging for developers to integrate the API into their applications.</p>
-                <button>Read More</button>
-                <h3 class="ticket-status">In Progress</h3>
-            </div>
-        </section>
-
-        <section class="announcements">
-            <h2 class="section-title">Announcements</h2>
-            <div class="announcement">
-                <h3 class="announcement-title">API Update</h3>
-                <p class="announcement-detail">We are excited to announce the upcoming release of our API Version 2.0! This update brings significant improvements, new features, and enhanced performance to our platform. We have listened to your feedback and incorporated many of your suggestions to make your integration process smoother and more efficient.</p>
-            </div>
-            <div class="announcement">
-                <h3 class="announcement-title">Site Maintenance</h3>
-                <p class="announcement-detail">We would like to inform you that we will be performing scheduled maintenance on our website to ensure optimal performance and reliability. During this maintenance window, there will be a temporary interruption of service.</p>
-            </div>
-            <div class="announcement">
-                <h3 class="announcement-title">Privacy Policy Update</h3>
-                <p class="announcement-detail">We are committed to safeguarding your privacy and ensuring the security of your personal information. We want to inform you about an important update to our Privacy Policy to reflect recent changes in data protection regulations and our ongoing dedication to transparency.</p>
-            </div>
-        </section>
-
-        <section class="taks">
-            <h2 class="section-title">Tasks</h2>
-            <div class="task">
-                <input type="checkbox" id="T-1193">
-                <label for="T-1193" class="task-title">Finish update DEV-11290</label>
-                <h3 class="task-status">NEW</h3>
-            </div>
-            <div class="task">
-                <input type="checkbox">
-                <label class="task-title">Fix DEV-21350</label>
-                <h3 class="task-status">URGENT</h3>
-            </div>
-            <div class="task">
-                <input type="checkbox">
-                <label class="task-title">Create new ticket for message bug</label>
-                <h3 class="task-status">NEW</h3>
-            </div>
-        </section>
+        <article>
+            <header>
+                <h2 class="dashboard">Dashboard</h2>
+                <nav>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-bell"></i>
+                </nav>
+                <div class="profile">
+                    <h3>Admin</h3>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </header>
+            <section class="left-section">
+                <section class="hero">
+                    <h2 class="hero-title">Hello Admin!</h2>
+                    <p>Today you have 10 new tickets</p>
+                    <button>View Analysis</button>
+                </section>
+                <section class="ticket">
+                    <h2 class="section-title">Ticket</h2>
+                    <div class="ticket">
+                        <h2 class="ticket-header">Issue: Login page error</h2>
+                        <h3 class="ticket-id">DEV-12345</h3>
+                        <p class="ticket-description">Users are unable to log in to the system. After entering their credentials, an "Invalid username or password" message is displayed.</p>
+                        <button>Read More</button>
+                        <h3 class="ticket-status">Open</h3>
+                    </div>
+                    <div class="ticket">
+                        <h2 class="ticket-header">Feature: User Profile Picture Upload</h2>
+                        <h3 class="ticket-id">DEV-54321</h3>
+                        <p class="ticket-description">Implement a feature that allows users to upload and update their profile pictures. The uploaded images should be saved securely and displayed on the user's profile page.</p>
+                        <button>Read More</button>
+                        <h3 class="ticket-status">In Progress</h3>
+                    </div>
+                    <div class="ticket">
+                        <h2 class="ticket-header">Feature: Search Function Optimization</h2>
+                        <h3 class="ticket-id">DEV-98765</h3>
+                        <p class="ticket-description">Improve the search functionality to provide more accurate and faster search results. The current search algorithm is slow and sometimes returns irrelevant results.
+                            Proposed Solution</p>
+                        <button>Read More</button>
+                        <h3 class="ticket-status">Pending Review</h3>
+                    </div>
+                    <div class="ticket">
+                        <h2 class="ticket-header">Issue: Outdated Third-Party Library</h2>
+                        <h3 class="ticket-id">DEV-24680</h3>
+                        <p class="ticket-description">The application is currently using an outdated version of the XYZ library (v1.2.3), which may have security vulnerabilities and lacks the latest features and optimizations.
+                            Action Required:</p>
+                        <button>Read More</button>
+                        <h3 class="ticket-status">Open</h3>
+                    </div>
+                    <div class="ticket">
+                        <h2 class="ticket-header">Issue: Missing API Documentation</h2>
+                        <h3 class="ticket-id">DEV-13579</h3>
+                        <p class="ticket-description">The API endpoints for the new user registration feature lack proper documentation, making it challenging for developers to integrate the API into their applications.</p>
+                        <button>Read More</button>
+                        <h3 class="ticket-status">In Progress</h3>
+                    </div>
+                </section>
+            </section>
+            <section class="right-section">
+                <section class="announcements">
+                    <h2 class="section-title">Announcements</h2>
+                    <div class="announcement">
+                        <h3 class="announcement-title">API Update</h3>
+                        <p class="announcement-detail">We are excited to announce the upcoming release of our API Version 2.0! This update brings significant improvements, new features, and enhanced performance to our platform. We have listened to your feedback and incorporated many of your suggestions to make your integration process smoother and more efficient.</p>
+                    </div>
+                    <div class="announcement">
+                        <h3 class="announcement-title">Site Maintenance</h3>
+                        <p class="announcement-detail">We would like to inform you that we will be performing scheduled maintenance on our website to ensure optimal performance and reliability. During this maintenance window, there will be a temporary interruption of service.</p>
+                    </div>
+                    <div class="announcement">
+                        <h3 class="announcement-title">Privacy Policy Update</h3>
+                        <p class="announcement-detail">We are committed to safeguarding your privacy and ensuring the security of your personal information. We want to inform you about an important update to our Privacy Policy to reflect recent changes in data protection regulations and our ongoing dedication to transparency.</p>
+                    </div>
+                </section>
+                <section class="taks">
+                    <h2 class="section-title">Tasks</h2>
+                    <div class="task">
+                        <input type="checkbox" id="T-1193">
+                        <label for="T-1193" class="task-title">Finish update DEV-11290</label>
+                        <h3 class="task-status">NEW</h3>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox">
+                        <label class="task-title">Fix DEV-21350</label>
+                        <h3 class="task-status">URGENT</h3>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox">
+                        <label class="task-title">Create new ticket for message bug</label>
+                        <h3 class="task-status">NEW</h3>
+                    </div>
+                </section>
+            </section>
+        </article>
     </div>
 </body>
 </html>
