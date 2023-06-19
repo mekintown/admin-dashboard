@@ -13,32 +13,44 @@
     <div class="container">
         <nav class="sidebar">
             <div>
-                <i class="fa-solid fa-house"></i>
-                <h3>Home</h3>
+                <i class="fa-solid fa-certificate"></i>
+                <h2>mekintown</h2>
             </div>
-            <div>
-                <i class="fa-solid fa-clock-rotate-left"></i>
-                <h3>History</h3>
+            <div class="sidebar-upper">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <h3>Home</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <h3>History</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-list-check"></i>
+                        <h3>Tasks</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Community</h3>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <i class="fa-solid fa-list-check"></i>
-                <h3>Tasks</h3>
-            </div>
-            <div>
-                <i class="fa-solid fa-users"></i>
-                <h3>Community</h3>
-            </div>
-            <div>
-                <i class="fa-solid fa-gear"></i>
-                <h3>Setting</h3>
-            </div>
-            <div>
-                <i class="fa-solid fa-headset"></i>
-                <h3>Support</h3>
-            </div>
-            <div>
-                <i class="fa-solid fa-eye-slash"></i>
-                <h3>Privacy</h3>
+            <div class="sidebar-lower">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <h3>Setting</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-headset"></i>
+                        <h3>Support</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-eye-slash"></i>
+                        <h3>Privacy</h3>
+                    </li>
+                </ul>
             </div>
         </nav>
         <article>
@@ -96,8 +108,7 @@
                         <div class="ticket">
                             <h2 class="ticket-header">Issue: Outdated Third-Party Library</h2>
                             <h3 class="ticket-id">DEV-24680</h3>
-                            <p class="ticket-description">The application is currently using an outdated version of the XYZ library (v1.2.3), which may have security vulnerabilities and lacks the latest features and optimizations.
-                                Action Required:</p>
+                            <p class="ticket-description">The application is currently using an outdated version of the XYZ library (v1.2.3), which may have security vulnerabilities and lacks the latest features and...</p>
                             <footer>
                                 <button>Read More</button>
                                 <h3 class="ticket-status">Open</h3>
@@ -134,18 +145,24 @@
                 <section class="taks">
                     <h2 class="section-title">Tasks</h2>
                     <div class="task">
-                        <input type="checkbox" id="T-1193">
-                        <label for="T-1193" class="task-title">Finish update DEV-11290</label>
+                        <div class="task-container">
+                            <input type="checkbox" id="T-1193">
+                            <label for="T-1193" class="task-title">Finish update DEV-11290</label>
+                        </div>
                         <h3 class="task-status">NEW</h3>
                     </div>
                     <div class="task">
-                        <input type="checkbox">
-                        <label class="task-title">Fix DEV-21350</label>
+                        <div>
+                            <input type="checkbox">
+                            <label class="task-title">Fix DEV-21350</label>
+                        </div>
                         <h3 class="task-status">URGENT</h3>
                     </div>
                     <div class="task">
-                        <input type="checkbox">
-                        <label class="task-title">Create new ticket for message bug</label>
+                        <div>
+                            <input type="checkbox">
+                            <label class="task-title">Create new ticket for...</label>
+                        </div>
                         <h3 class="task-status">NEW</h3>
                     </div>
                 </section>

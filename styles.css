@@ -7,7 +7,7 @@
 
 button{
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     height: 40px;
     border-radius: 20px;
     border: none;
@@ -23,24 +23,41 @@ button{
 .sidebar {
     display: grid;
     grid-column: 1;
-    justify-items: center;
+    grid-template-rows: min-content 1fr 1fr;
+    margin-left: 30px;
     height: 100vh;
 }
 
-.sidebar h3 {
+.sidebar ul {
+    list-style-type: none;
+    margin-left: 20px;
+    display: grid;
+    gap: 25px;
+}
+
+.sidebar-upper {
+    margin-top: 20%;
+}
+.sidebar-lower {
+    margin-top: 80%;
+}
+
+.sidebar h3, .sidebar h2 {
     display: inline;
 }
 
 article {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 20px
+    gap: 20px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 header {
     display: grid;
     grid-column: 1 / -1;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     margin-right: 10px;
     align-items: center;
 }
@@ -60,31 +77,48 @@ header nav {
 
 header .profile {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     gap: 20px;
     align-items: center;
 }
 
+
 .left-section {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+.hero {
+    margin: 10px;
+}
+
+.hero button {
+    margin-top: 40px;
 }
 
 .ticket-section {
     display: grid;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: auto 1fr;
+}
+
+
+.ticket-section .section-title {
+    margin-bottom: 10px;
 }
 
 .tickets {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px
+    gap: 10px;
+    height: 65vh;
+    overflow: auto;
 }
 
 .right-section {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
+    height: 100vh;
     gap: 30px;
     margin-right: 10px;
 }
@@ -124,4 +158,15 @@ header .profile {
 
  .ticket h3 {
     font-size: 1.2rem;
+ }
+
+
+
+ .task {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+ }
+
+ .task h3 {
+    font-size: 1rem;
  }
